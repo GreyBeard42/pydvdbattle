@@ -1,2 +1,2 @@
-# pygametemplate
-My little pygame template
+# PyDvDBattle
+DvD Battles made with Pygame
