@@ -13,8 +13,7 @@ print("\nThe games have begun!\n\n---")
 
 players = []
 players.append(Rect(150, 150, random.randint(60, 150)*1.5, random.randint(60, 150)*1.5, random.randint(0, 4), random.randint(0, 4), (245, 66, 126), (112, 17, 49)))
-#players.append(Rect(450, 450, random.randint(60, 150)*1.5, random.randint(60, 150)*1.5, random.randint(0, 5), random.randint(0, 5), (66, 245, 233), (15, 82, 77)))
-players.append(Rect(450, 450, random.randint(60, 150)*1.5, random.randint(60, 150)*1.5, players[0].vx, players[0].vy, (66, 245, 233), (15, 82, 77)))
+players.append(Rect(450, 450, players[0].h, players[0].w, players[0].vx, players[0].vy, (66, 245, 233), (15, 82, 77)))
 
 while True:
     for event in pygame.event.get():
