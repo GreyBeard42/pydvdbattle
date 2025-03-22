@@ -7,12 +7,14 @@ class Rect:
         self.w = w
         self.h = h
         self.s = 1
+
         self.vx = vx
         self.vy = vy
-        if self.vx < 2: self.vx -= 4
-        if self.vy < 2: self.vy -= 4
-        if(self.vx == 0): self.vx = random.randint(-1, 1)
-        if(self.vy == 0): self.vy = random.randint(-1, 1)
+        if self.vx < 1: self.vx -= 2
+        if self.vy < 1: self.vy -= 2
+        self.vx *= 1.25
+        self.vy *= 1.25
+
         self.fill = f
         self.stroke = s
     def move(self, other, n):
